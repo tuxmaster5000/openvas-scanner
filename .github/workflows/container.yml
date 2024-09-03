@@ -100,11 +100,11 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: nasl-cli-amd64
           path: bin/nasl-cli/linux/amd64
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: nasl-cli-aarch64
           path: bin/nasl-cli/linux/arm64
